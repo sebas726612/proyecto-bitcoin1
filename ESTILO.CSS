@@ -1,0 +1,58 @@
+
+/* DISEÑO OSCURO Y TECNOLÓGICO */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #07111F;
+    color: #EAF2F8;
+    margin: 15px;
+}
+
+/* TITULOS */
+h1, h2, h3 {
+    color: #F7931A;
+    text-align: center;
+}
+
+/* PARRAFOS */
+p {
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: justify;
+    color: #EAF2F8;
+}
+
+/* IMAGENES */
+img {
+    max-width: 90%;
+    height: auto;
+    border: 2px solid #F7931A;
+    border-radius: 12px;
+}
+
+/* VIDEOS */
+video {
+    max-width: 95%;
+    border: 2px solid #F7931A;
+    border-radius: 12px;
+}
+
+/* ENLACES */
+a {
+    color: #F7931A;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* SEPARADORES */
+hr {
+    border: 0;
+    border-top: 1px solid #F7931A;
+}
+
+

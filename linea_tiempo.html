@@ -1,0 +1,277 @@
+
+<html>
+<head>
+    <title>Línea del tiempo de Bitcoin</title>
+    <link rel="stylesheet" href="ESTILO.CSS">
+
+    <style>
+        body {
+            background-color: #07111F;
+            color: #EAF2F8;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .encabezado {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .encabezado h1 {
+            color: #F7931A;
+            font-size: 30px;
+        }
+
+        .introduccion {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            line-height: 1.7;
+        }
+
+        .linea {
+            position: relative;
+            max-width: 850px;
+            margin: 45px auto;
+            padding: 10px 0;
+        }
+
+        .linea::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background-color: #F7931A;
+            transform: translateX(-50%);
+        }
+
+        .evento {
+            position: relative;
+            width: 43%;
+            background: linear-gradient(145deg, #14263D, #0D192A);
+            border: 1px solid #F7931A;
+            border-radius: 14px;
+            padding: 20px;
+            margin-bottom: 35px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+        }
+
+        .evento:nth-child(odd) {
+            margin-left: 0;
+        }
+
+        .evento:nth-child(even) {
+            margin-left: 52%;
+        }
+
+        .evento::before {
+            content: "";
+            position: absolute;
+            top: 25px;
+            width: 16px;
+            height: 16px;
+            background-color: #F7931A;
+            border: 4px solid #07111F;
+            border-radius: 50%;
+        }
+
+        .evento:nth-child(odd)::before {
+            right: -15%;
+        }
+
+        .evento:nth-child(even)::before {
+            left: -15%;
+        }
+
+        .fecha {
+            display: inline-block;
+            color: #07111F;
+            background-color: #F7931A;
+            font-size: 21px;
+            font-weight: bold;
+            padding: 7px 18px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+        }
+
+        .evento h2 {
+            color: #F7931A;
+            font-size: 19px;
+            text-align: left;
+            margin-top: 5px;
+        }
+
+        .evento p {
+            color: #EAF2F8;
+            line-height: 1.6;
+            text-align: justify;
+            font-size: 15px;
+        }
+
+        .conclusion {
+            max-width: 850px;
+            margin: 45px auto 25px;
+            padding: 22px;
+            background-color: #14263D;
+            border: 1px solid #F7931A;
+            border-radius: 14px;
+            text-align: center;
+        }
+
+        .conclusion h2 {
+            color: #F7931A;
+        }
+
+        .conclusion p {
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        @media screen and (max-width: 650px) {
+            .linea::before {
+                left: 10px;
+            }
+
+            .evento,
+            .evento:nth-child(even),
+            .evento:nth-child(odd) {
+                width: auto;
+                margin-left: 35px;
+            }
+
+            .evento:nth-child(odd)::before,
+            .evento:nth-child(even)::before {
+                left: -37px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="encabezado">
+    <h1>LÍNEA DEL TIEMPO DE BITCOIN</h1>
+    <hr width="80%">
+</div>
+
+<div class="introduccion">
+    <p>
+        Desde su creación, Bitcoin ha atravesado diferentes etapas
+        que marcaron su desarrollo y crecimiento. Conoce los
+        acontecimientos más importantes que transformaron esta
+        moneda digital desde 2008 hasta la actualidad.
+    </p>
+</div>
+
+<div class="linea">
+
+    <div class="evento">
+        <div class="fecha">2008</div>
+        <h2>EL NACIMIENTO DE LA IDEA</h2>
+        <p>
+            El 31 de octubre de 2008, Satoshi Nakamoto publicó
+            el documento que presentó Bitcoin como un sistema
+            de dinero electrónico que permitiría realizar
+            transacciones sin depender de bancos.
+        </p>
+    </div>
+
+    <div class="evento">
+        <div class="fecha">2009</div>
+        <h2>COMIENZA A FUNCIONAR BITCOIN</h2>
+        <p>
+            El 3 de enero de 2009 se creó el Bloque Génesis,
+            el primer bloque de la red Bitcoin. Este hecho
+            marcó el comienzo de su funcionamiento.
+        </p>
+    </div>
+
+    <div class="evento">
+        <div class="fecha">2010</div>
+        <h2>LA FAMOSA COMPRA DE LAS PIZZAS</h2>
+        <p>
+            El 22 de mayo de 2010, Laszlo Hanyecz pagó
+            10.000 bitcoins por dos pizzas. Esta compra
+            se convirtió en uno de los acontecimientos
+            más conocidos de la historia de Bitcoin.
+        </p>
+    </div>
+
+    <div class="evento">
+        <div class="fecha">2012</div>
+        <h2>EL PRIMER HALVING</h2>
+        <p>
+            Ocurrió el primer halving de Bitcoin. La recompensa
+            que recibían los mineros por crear nuevos bloques
+            se redujo de 50 a 25 bitcoins.
+        </p>
+    </div>
+
+    <div class="evento">
+        <div class="fecha">2017</div>
+        <h2>CRECE SU POPULARIDAD</h2>
+        <p>
+            Bitcoin ganó reconocimiento internacional.
+            Su precio aumentó considerablemente y cada vez
+            más personas comenzaron a interesarse por
+            las criptomonedas.
+        </p>
+    </div>
+
+    <div class="evento">
+        <div class="fecha">2021</div>
+        <h2>EL SALVADOR ADOPTA BITCOIN</h2>
+        <p>
+            El Salvador se convirtió en el primer país
+            en adoptar Bitcoin como moneda de curso legal,
+            convirtiéndose en un acontecimiento histórico
+            para las criptomonedas.
+        </p>
+    </div>
+
+    <div class="evento">
+        <div class="fecha">2024</div>
+        <h2>APROBACIÓN DE FONDOS DE BITCOIN</h2>
+        <p>
+            Estados Unidos aprobó varios productos de inversión
+            cotizados en bolsa relacionados con Bitcoin.
+            Esto facilitó el acceso de inversionistas
+            a este mercado mediante entidades financieras.
+        </p>
+    </div>
+
+    <div class="evento">
+        <div class="fecha">2026</div>
+        <h2>BITCOIN EN LA ACTUALIDAD</h2>
+        <p>
+            En 2026, Bitcoin continúa siendo una de las
+            criptomonedas más reconocidas del mundo.
+            Empresas, fondos de inversión e instituciones
+            siguen participando en su mercado.
+        </p>
+
+        <p>
+            Durante este año, Bitcoin ha continuado
+            evolucionando, aunque su precio sigue
+            experimentando cambios importantes.
+            Su historia demuestra cómo una idea de dinero
+            digital llegó a tener reconocimiento mundial.
+        </p>
+    </div>
+
+</div>
+
+<div class="conclusion">
+    <h2>DE 2008 HASTA LA ACTUALIDAD</h2>
+    <p>
+        Bitcoin pasó de ser una propuesta tecnológica
+        a convertirse en una de las monedas digitales
+        más conocidas del mundo. Su evolución continúa
+        y su historia sigue escribiéndose.
+    </p>
+</div>
+
+</body>
+</html>
